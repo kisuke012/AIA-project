@@ -14,7 +14,9 @@ A beginner-friendly machine learning project that predicts whether a patient has
 - The dataset is small (918 rows), where a simple model works well and is less likely to overfit.
 - The coefficients are **interpretable**, which matters in healthcare.
 
-> Model suggestion from ChatGPT: see [View Screenshot](Screenshot 2026-11-26 031032.png)
+> Model suggestion from ChatGPT: 
+<img width="1036" height="450" alt="Screenshot 2026-11-26 031032" src="https://github.com/user-attachments/assets/2681299d-68ec-4ffd-891f-0d7f15b88976" />
+
 
 ## Project Steps
 1. **Load data** and inspect it
