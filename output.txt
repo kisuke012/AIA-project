@@ -1,0 +1,76 @@
+(918, 12)
+   Age Sex ChestPainType  ...  Oldpeak  ST_Slope  HeartDisease
+0   40   M           ATA  ...      0.0        Up             0
+1   49   F           NAP  ...      1.0      Flat             1
+2   37   M           ATA  ...      0.0        Up             0
+3   48   F           ASY  ...      1.5      Flat             1
+4   54   M           NAP  ...      0.0        Up             0
+
+[5 rows x 12 columns]
+<class 'pandas.DataFrame'>
+RangeIndex: 918 entries, 0 to 917
+Data columns (total 12 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   Age             918 non-null    int64  
+ 1   Sex             918 non-null    str    
+ 2   ChestPainType   918 non-null    str    
+ 3   RestingBP       918 non-null    int64  
+ 4   Cholesterol     918 non-null    int64  
+ 5   FastingBS       918 non-null    int64  
+ 6   RestingECG      918 non-null    str    
+ 7   MaxHR           918 non-null    int64  
+ 8   ExerciseAngina  918 non-null    str    
+ 9   Oldpeak         918 non-null    float64
+ 10  ST_Slope        918 non-null    str    
+ 11  HeartDisease    918 non-null    int64  
+dtypes: float64(1), int64(6), str(5)
+memory usage: 86.2 KB
+None
+Missing values:
+ Age               0
+Sex               0
+ChestPainType     0
+RestingBP         0
+Cholesterol       0
+FastingBS         0
+RestingECG        0
+MaxHR             0
+ExerciseAngina    0
+Oldpeak           0
+ST_Slope          0
+HeartDisease      0
+dtype: int64
+Duplicate rows: 0
+HeartDisease         1.000000
+ST_Slope_Flat        0.554134
+ExerciseAngina       0.494282
+Oldpeak              0.403951
+Sex                  0.305445
+Age                  0.282039
+FastingBS            0.267291
+RestingBP            0.117798
+RestingECG_ST        0.102527
+Cholesterol          0.076114
+ChestPainType_TA    -0.054790
+RestingECG_Normal   -0.091580
+ChestPainType_NAP   -0.212964
+MaxHR               -0.400421
+ChestPainType_ATA   -0.401924
+ST_Slope_Up         -0.622164
+Name: HeartDisease, dtype: float64
+Accuracy : 0.8913043478260869
+ROC-AUC  : 0.9326877092300334
+Confusion Matrix:
+ [[71 11]
+ [ 9 93]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.89      0.87      0.88        82
+           1       0.89      0.91      0.90       102
+
+    accuracy                           0.89       184
+   macro avg       0.89      0.89      0.89       184
+weighted avg       0.89      0.89      0.89       184
+
